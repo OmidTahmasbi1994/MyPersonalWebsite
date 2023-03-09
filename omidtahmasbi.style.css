@@ -1,0 +1,780 @@
+body
+{
+    margin: 0px;
+    background-image: url('backgroundimage.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2px;
+}
+#container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    max-width: 100%;
+    min-height: 800px;
+}
+#leftpart
+{
+    width:25%;
+}
+#bar
+{
+    position:fixed;
+    top: 13px;
+    left: 28px;
+    font-size: 45px;
+    color: black;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#responsivemenuword
+{
+    display: none;
+}
+#bar:hover
+{
+    color: black;
+    font-size: 50px;
+    transition: 0.4s;
+    transform: rotateZ(90deg);
+}
+#mysidenav
+{
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    width: 20%;
+    min-height: 755px;
+    background-color: rgb(5, 0, 0);
+    border-radius: 0px 3px 3px 0px;
+    transition: 0.7s;
+}
+#mysidenav a
+{
+    display: block;
+    padding-left:7px;
+    padding-top: 45px;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: tahoma,sans-serif;
+    color: moccasin;
+    border-bottom: 1px solid rgb(40, 40, 40);
+}
+#mysidenav a:hover
+{
+    color: yellow;
+    text-shadow:1px 0px 16px cyan;
+    font-size: 21px;
+}
+#mysidenav #closenav 
+{
+    padding-top: 19px;
+    padding-left: 10px;
+    color: moccasin;
+    font-size:30px;
+    cursor: pointer;
+}
+#mysidenav #closenav:hover
+{
+    font-size: 30px;
+    color: coral;
+    text-shadow: 1px 0px 5px black;
+}
+#mysidenav #closenav:active
+{
+    color: moccasin;
+    font-size:28px;
+}
+#content
+{
+    width: 50%;
+    direction: ltr;
+    white-space: wrap;
+}
+#header
+{
+    float: left;
+    text-align: center;
+    margin-top: 15px;
+    width: 100%;
+    min-height: 55px;
+    border-bottom: 1px solid black;
+}
+#banner
+{
+    text-decoration: none;
+    color: black;
+    font-family: "Times New Roman", tahoma, Verdana,sans-serif;
+    font-size: 54px;
+    letter-spacing: -3px;
+    text-shadow: 6px 5px 30px dimgray;
+}
+#banner:hover
+{
+    color: yellow;
+    text-shadow: 6px 5px 27px black;
+}
+#responsivebar
+{
+    display: none;
+}
+#responsivenav
+{
+    display: none;
+}
+#myposts
+{
+    clear: both;
+    width: 100%;
+    height:590px;
+    margin-top:85px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: posttag;
+    animation-delay: 0s;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    border-radius: 2px;
+}
+#usefullinks
+{
+    padding-left: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+#usefullinksheader
+{
+    color: black;
+    text-shadow: 6px 4px 30px darkblue;
+}
+#usefullinkslist
+{
+    line-height: 50px;
+    font-size: 20px;
+    font-family: tahoma,arial,sans-serif;
+    font-weight: bold;
+    letter-spacing: 0px;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid black;
+}
+#usefullinkslist li a
+{
+    text-decoration: none;
+}
+#rightpart
+{
+    width: 25%;
+    direction: rtl;
+}
+#biographiheader 
+{
+    color: black;
+    text-shadow: 6px 4px 30px darkblue;
+}
+#myphoto
+{
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+}
+#biographi
+{
+    
+    color: black;
+    text-shadow: 1px 0px 1px snow;
+    line-height: 30px;
+    font-size: 18px;
+    font-family: arial,sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid black;
+}
+#backhome
+{
+    text-decoration: none;
+    font-size: 20px;
+}
+#connectionheader
+{
+    color: black;
+    text-shadow: 6px 4px 30px darkblue;
+}
+#connectioncontent
+{
+    color: black;
+    text-shadow: 1px 0px 1px snow;
+    line-height: 37px;
+    font-size: 20px;
+    font-family: tahoma,arial,sans-serif;
+    letter-spacing: 1px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 1px solid black;
+}
+#connectioncontent2
+{
+    display:none;
+}
+.fa-envelope
+{
+    font-size: 40px;
+}
+.fa-github
+{
+    font-size: 40px;
+}
+.fa-instagram
+{
+    font-size: 45px;
+}
+.fa-telegram
+{
+    font-size: 42px;
+}
+.fa-linkedin-square
+{
+    font-size: 42px;
+}
+#educationheader
+{
+    color: black;
+    text-shadow: 6px 4px 30px darkblue;
+}
+#education
+{
+    color: black;
+    text-shadow: 1px 0px 1px snow;
+    line-height: 30px;
+    font-size: 17px;
+    font-family: arial,sans-serif;
+    font-weight: bold;
+    letter-spacing: 0px;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid black;
+}
+#education li
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#payamenoorheader
+{
+    font-size: 22px;
+}
+#payamenoorlogo
+{
+    width: 110px;
+    height: 110px;
+    border-radius: 2px;
+}
+#sepehrheader
+{
+    font-size: 22px;
+}
+#sepehrlogo
+{
+    width: 110px;
+    height: 110px;
+    border-radius: 2px;
+}
+#farhangianheader
+{
+    font-size: 22px;
+}
+#farhangianlogo
+{
+    width: 110px;
+    height: 110px;
+    border-radius: 2px;
+}
+#booksheader
+{
+    color: black;
+    text-shadow: 6px 4px 30px darkblue;
+}
+#books
+{
+    color: black;
+    text-shadow: 1px 0px 1px snow;
+    line-height: 30px;
+    font-size: 17px;
+    font-family: arial,sans-serif;
+    font-weight: bold;
+    letter-spacing: 0px;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid black;
+}
+#books li
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#arttherapyheader
+{
+    font-size: 22px;
+}
+#arttherapypic
+{
+    width: 220px;
+    height: 310px;
+    border-radius: 2px;
+}
+#arttherapydownloadlink
+{
+    display: block;
+    margin-top: 10px;
+}
+#downloadbutton1
+{
+    width: 170px;
+    height: 50px;
+}
+#gitlearningheader
+{
+    font-size: 22px;
+}
+#gitlearningpic
+{
+    width: 220px;
+    height: 310px;
+    border-radius: 2px;
+}
+#gitlearningdownloadlink
+{
+    display: block;
+    margin-top: 10px;
+}
+#downloadbutton2
+{
+    width: 170px;
+    height: 50px;
+}
+@keyframes posttag
+{
+    0%      {background-image:url("post1.jpg");}
+    25%     {background-image:url("post2.jpg");}
+    50%     {background-image:url("post3.jpg");}
+    75%     {background-image:url("post4.jpg");}
+    100%    {background-image:url("post5.jpg");}
+    
+}
+
+@media screen and (max-width:480px)
+{
+    body
+    {
+        margin: 0px;
+        background-image: url('backgroundimage.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+    }
+    #container
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        max-width: 100%;
+        min-height: 800px;
+    }
+    #leftpart
+    {
+        width: 14%;
+    }
+    #bar
+    {
+        display: none;
+    }
+    #mysidenav
+    {
+        display: none;
+    }
+    #content
+    {
+        width: 72%;
+        direction: ltr;
+        white-space: wrap;
+    }
+    #rightpart
+    {
+        width: 14%;
+    }
+    #header
+    {
+        float: left;
+        text-align: center;
+        margin-top: 75px;
+        width: 100%;
+        min-height: 35px;
+        border-bottom: none;
+    }
+    #banner
+    {
+        text-decoration: none;
+        color: black;
+        font-family: "Times New Roman",tahoma, Verdana,sans-serif;
+        font-size: 35px;
+        font-weight: bold;
+        letter-spacing: -2px;
+        text-shadow: 6px 5px 30px dimgray;
+    }
+    #banner:hover
+    {
+        color: black;
+        text-shadow: 6px 5px 30px dimgray;
+    }
+    #banner:active
+    {
+        color: yellow;
+        text-shadow: 6px 5px 27px black;
+    }
+    #responsivebar
+    {
+        display: inline;
+    }
+    #responsivenav
+    {
+        display: block;
+    }
+    #responsivebar
+    {
+        position:fixed;
+        top: 2px;
+        left: 6px;
+        font-size: 39px;
+        color: black;
+        cursor: pointer;
+    }
+    #responsivemenuword
+    {
+        display: inline;
+        position:fixed;
+        top: 39px;
+        left: 7px;
+        font-size: 11px;
+        font-weight: bold;
+        font-family: tahoma;
+        color: black;
+        cursor: pointer;
+    }
+    #responsivenav
+    {
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        width: 100%;
+        min-height: 755px;
+        background-color: rgb(5, 0, 0);
+        border-radius: 0px 0px 0px 0px;
+        transition: 0.7s;
+        transition-delay: 0.3s;
+    }
+    #responsivenav a
+    {
+        display: block;
+        padding-left:15px;
+        padding-top: 30px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: tahoma,sans-serif;
+        color: moccasin;
+        border-bottom: 1px solid rgb(58, 58, 58);
+    }
+    #responsivenav a:active
+    {
+        color: yellow;
+    }
+    #responsivenav #closeresponsive
+    {
+        padding-top: 19px;
+        padding-left: 20px;
+        color: coral;
+        font-size:28px;
+        cursor: pointer;
+    }
+    #responsivenav #closeresponsive:active
+    {
+        color: yellow;
+    }
+    #myposts
+    {
+        clear: both;
+        width: 100%;
+        height:250px;
+        margin-top:150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation-name: posttag;
+        animation-delay: 0s;
+        animation-duration: 40s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        border-radius: 6px;
+    }
+    #usefullinks
+    {
+        font-size: 17px;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    #usefullinksheader
+    {
+        color: black;
+        text-shadow: 6px 4px 30px darkblue;
+        font-size: 20px;
+        text-align: center;
+    }
+    #usefullinkslist
+    {
+        color: black;
+        text-shadow: 1px 0px 1px snow;
+        line-height: 35px;
+        font-size: 16px;
+        font-family: arial,"Times New Roman",sans-serif;
+        letter-spacing: 1px;
+        padding-top: 25px;
+        padding-left: 23px;
+        border: 1px solid black;
+    }
+    #usefullinkslist li a
+    {
+        text-decoration: none;
+    }
+    #biographiheader 
+    {
+        color: black;
+        text-shadow: 6px 4px 30px darkblue;
+        font-size: 20px;
+        text-align: center;
+    }
+    #myphoto
+    {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }
+    #biographi
+    {
+        
+        color: black;
+        text-shadow: 1px 0px 1px snow;
+        line-height: 30px;
+        font-size: 12px;
+        font-family: tahoma,arial,sans-serif;
+        letter-spacing: 0px;
+        padding-left: 12px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border: 1px solid black;
+    }
+    #backhome
+    {
+        text-decoration: none;
+        font-size: 16px;
+    }
+    #educationheader
+    {
+        color: black;
+        text-shadow: 6px 4px 30px darkblue;
+        font-size: 20px;
+        text-align: center;
+    }
+    #education
+    {
+        color: black;
+        text-shadow: 1px 0px 1px snow;
+        line-height: 27px;
+        font-size: 12px;
+        font-family: arial,"Times New Roman",sans-serif;
+        letter-spacing: 0px;
+        padding-left: 18px;
+        padding-top: 0px;
+        border: 1px solid black;
+    }
+    #education li
+    {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    #payamenoorheader
+    {
+        font-size: 14px;
+        font-family: tahoma,sans-serif;
+    }
+    #payamenoorlogo
+    {
+        width: 65px;
+        height: 65px;
+        border-radius: 2px;
+    }
+    #sepehrheader
+    {
+        font-size: 14px;
+        font-family: tahoma,sans-serif;
+    }
+    #sepehrlogo
+    {
+        width: 65px;
+        height: 65px;
+        border-radius: 2px;
+    }
+    #farhangianheader
+    {
+        font-size: 14px;
+        font-family: tahoma,sans-serif;
+    }
+    #farhangianlogo
+    {
+        width: 65px;
+        height: 65px;
+        border-radius: 2px;
+    }
+    #connectionheader
+    {
+        color: black;
+        text-shadow: 6px 4px 30px darkblue;
+        font-size: 20px;
+        text-align: center;
+    }
+    #connectioncontent
+    {
+        display: none;
+    }
+    #connectioncontent2
+    {
+        display: block;
+        color: black;
+        text-shadow: 1px 0px 1px snow;
+        line-height: 50px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: tahoma,arial,sans-serif;
+        letter-spacing: 1px;
+        padding-left: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border: 1px solid black;
+    }
+    #emailaddress
+    {
+        font-size: 16px;
+        font-family: "Times New Roman",arial,sans-serif;
+    }
+    #connectioncontent2 a
+    {
+        text-decoration: none;
+    }
+    .fa-envelope
+    {
+        font-size: 25px;
+    }
+    .fa-github
+    {
+        font-size: 25px;
+    }
+    .fa-instagram
+    {
+        font-size: 25px;
+    }
+    .fa-telegram
+    {
+        font-size: 25px;
+    }
+    .fa-linkedin-square
+    {
+        font-size: 25px;
+    }
+    #booksheader
+    {
+        color: black;
+        text-shadow: 6px 4px 30px darkblue;
+        font-size: 20px;
+        text-align: center;
+    }
+    #books
+    {
+        color: black;
+        text-shadow: 1px 0px 1px snow;
+        line-height: 27px;
+        font-size: 12px;
+        font-family: arial,"Times New Roman",sans-serif;
+        letter-spacing: 0px;
+        padding-left: 18px;
+        padding-top: 0px;
+        border: 1px solid black;
+    }
+    #books li
+    {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    #arttherapyheader
+    {
+        font-size: 14px;
+        font-family: tahoma,sans-serif;
+    }
+    #arttherapypic
+    {
+        width: 130px;
+        height: 180px;
+        border-radius: 2px;
+    }
+    #arttherapydownloadlink
+    {
+        display: block;
+        margin-top: 10px;
+    }
+    #downloadbutton1
+    {
+        width: 125px;
+        height: 40px;
+    }
+    #gitlearningheader
+    {
+        font-size: 14px;
+        font-family: tahoma,sans-serif;
+    }
+    #gitlearningpic
+    {
+        width: 130px;
+        height: 180px;
+        border-radius: 2px;
+    }
+    #gitlearningdownloadlink
+    {
+        display: block;
+        margin-top: 10px;
+    }
+    #downloadbutton2
+    {
+        width: 125px;
+        height: 40px;
+    }
+    @keyframes posttag 
+    {
+        0%      {background-image:url("post2.1.jpg");}
+        25%     {background-image:url("post2.2.jpg");}
+        50%     {background-image:url("post2.3.jpg");}
+        75%     {background-image:url("post2.4.jpg");}
+        100%    {background-image:url("post2.5.jpg");}
+    }
+}
