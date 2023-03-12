@@ -380,7 +380,7 @@ body
     body
     {
         margin: 0px;
-        background-image: url('backgroundimage.jpg');
+        background-image: url('backgroundresponsiveimage.jpg');
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
@@ -617,7 +617,7 @@ body
     }
     #payamenoorheader
     {
-        font-size: 14px;
+        font-size: 13px;
         font-family: tahoma,sans-serif;
     }
     #payamenoorlogo
@@ -628,7 +628,7 @@ body
     }
     #sepehrheader
     {
-        font-size: 14px;
+        font-size: 13px;
         font-family: tahoma,sans-serif;
     }
     #sepehrlogo
@@ -639,7 +639,7 @@ body
     }
     #farhangianheader
     {
-        font-size: 14px;
+        font-size: 13px;
         font-family: tahoma,sans-serif;
     }
     #farhangianlogo
@@ -676,7 +676,8 @@ body
     }
     #emailaddress
     {
-        font-size: 16px;
+        font-size: 15px;
+        color: rgb(2, 2, 174);
         font-family: "Times New Roman",arial,sans-serif;
     }
     #connectioncontent2 a
@@ -729,7 +730,7 @@ body
     }
     #arttherapyheader
     {
-        font-size: 14px;
+        font-size: 13px;
         font-family: tahoma,sans-serif;
     }
     #arttherapypic
@@ -750,7 +751,7 @@ body
     }
     #gitlearningheader
     {
-        font-size: 14px;
+        font-size: 13px;
         font-family: tahoma,sans-serif;
     }
     #gitlearningpic
